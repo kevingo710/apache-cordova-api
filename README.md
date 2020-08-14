@@ -5,7 +5,15 @@
 ### _Resources_:
 * Apache Cordova
 * NodeJS
+* [Node API mongo](https://github.com/kevingo710/node-apifav-mongo)  -> this repo
 
+
+### Instructions
+
+1. Git clone repo
+2. npm install
+3. cordova platform add android || cordova platform add browser
+4. cordova run <platform>
 
 
 * [Cordova](https://cordova.apache.org/) Cross Platfrom Develop Apps 🦘
