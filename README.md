@@ -7,9 +7,7 @@
 * NodeJS
 
 
-* DDL ✍️
-* Views 🖥️ 
-* Stored Procedures 📟
+
 * [Cordova](https://cordova.apache.org/) Cross Platfrom Develop Apps 🦘
 
 
