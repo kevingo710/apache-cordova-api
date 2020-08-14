@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <!--
+        Personalice la directiva de seguridad de contenido en la etiqueta meta como sea necesario. Agregue "unsafe-inline" a default-src para permitir JavaScript insertado.
+        Para obtener m�s detalles, consulte http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-eval' 'unsafe-inline'; img-src 'self' data:">
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <title>AppMovil2</title>
+    </head>
+    <body>
+        <!---PAGINA 1-->
+        <div data-role="page" id="pagina1">
+            <div data-role="header">
+                <h2>Mi primera App</h2>
+            </div>
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="home">PAGE 1</a></li>
+                    <li><a href="#pagina2" data-icon="grid">Pagina2</a></li>
+                </ul>
+            </div>
+
+            <div data-role="content">
+                <input type="text" id="txtNombre" />
+                <button id="btnBuscar">Buscar</button>
+                <div id="divResultado1"></div>
+                <div id="divResultado2"></div>
+                <div id="divResultado3"></div>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h3>Tutorial Apache Cordova</h3>
+            </div>
+        </div>
+
+        <!--PAGINA 2-->
+        <div data-role="page" id="pagina2">
+            <div data-role="header">
+                <h2>Mi primera App</h2>
+            </div>
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#pagina1" data-icon="home">PRIMERA PAGE</a></li>
+                    <li><a href="#" data-icon="grid">Pagina2</a></li>
+                </ul>
+            </div>
+
+            <div data-role="content">
+                <button id="btnCargar">Cargar Lista</button>
+                <div id="divLista" class="table-responsive"></div>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h3>Tutorial Apache Cordova</h3>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script type="text/javascript" src="scripts/jquery-2.2.3.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile-1.4.5.js"></script>
+    </body>
+</html>
